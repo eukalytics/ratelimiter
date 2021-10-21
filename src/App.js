@@ -26,7 +26,7 @@ function RateLimitedForm() {
   }, [rateLimit])
 
   return (
-    <section>
+    <section className="mx-auto w-5/6 md:w-1/2 lg:w-1/3">
       <Header header={header}/>
       <Form incrRateLimit={incrRateLimit} delayFormSubmit={delayFormSubmit}/>
       <RateLimitInfo rateLimit={rateLimit} />

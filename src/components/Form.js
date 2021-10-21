@@ -4,17 +4,14 @@ import SubmitBtn from "./SubmitBtn";
 export default function Form({incrRateLimit, delayFormSubmit}){
     return (
         <form onSubmit={delayFormSubmit} name="rateLimitedForm">
-            <p>
-                <label htmlFor='name'>Name:</label>
-                <input type='text' placeholder='name' name='name'></input>
+            <p className="mb-5">
+                <input type='text' placeholder='name' name='name' className="w-2/3 rounded-full px-4 py-2 focus:outline-none focus:ring focus:ring-green-200" required></input>
             </p>
-            <p>
-                <label htmlFor='email'>Email:</label>
-                <input type='email' placeholder='email' name='email'></input>
+            <p className="mb-5">
+                <input type='email' placeholder='email' name='email' className="w-2/3 rounded-full px-4 py-2 focus:outline-none focus:ring focus:ring-green-200" required></input>
             </p>
-            <p>
-                <label htmlFor='message'>Message:</label>
-                <textarea placeholder='message' name='message'></textarea>
+            <p className="mb-5">
+                <textarea placeholder='message' name='message' className="w-2/3 rounded-full px-4 py-2 focus:outline-none focus:ring focus:ring-green-200" required></textarea>
             </p>
             <SubmitBtn />
         </form>
